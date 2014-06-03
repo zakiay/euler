@@ -18,11 +18,6 @@ def isPal(n):
 	return True
 
 temp = 0 
-# this has to be improved...
-# does 100 * 100, 100 * 101, 100 * 102,... 
-# then 101 * 100, 101 * 101,... 
-# repeats some operations and makes the runtime way too big
-
 for i in range(100, 1000):
 	for j in range(i, 1000):	
 		if isPal(str(i*j)):
