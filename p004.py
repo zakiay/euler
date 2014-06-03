@@ -1,9 +1,9 @@
-import timeit # I use this to see the runtime
+import timeit # I use this to see the runtime. Best one so far was 0.72
 
 start = timeit.default_timer()
 
 def isPal(n):
-	"""This function checks to see if the number is a palindrome.
+	"""This function checks to see if the number is a palindrom.
 	Must input a string like this: isPal(str(12345))"""
 	strNumber = str(n)
 
@@ -22,8 +22,9 @@ temp = 0
 # does 100 * 100, 100 * 101, 100 * 102,... 
 # then 101 * 100, 101 * 101,... 
 # repeats some operations and makes the runtime way too big
+
 for i in range(100, 1000):
-	for j in range(100, 1000):
+	for j in range(i, 1000):	
 		if isPal(str(i*j)):
 			if temp < (i*j):
 				temp = i*j
