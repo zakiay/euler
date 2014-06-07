@@ -1,17 +1,12 @@
 lim = 100
 
 def sums():
-	s = 0
+	m = 0
+	n = 0
 	for i in range(1, lim+1):
-		s += + i*i
+		m += + i*i
+		n += i
 
-	return s
+	return n*n - m
 
-def sqrt():
-	s = 0
-	for i in range(1, lim+1):
-		s += i
-
-	return s*s
-
-print sqrt(), " - ", sums(), " = ", sqrt() - sums()
+print sums()
